@@ -1,0 +1,166 @@
+:root{
+    --main-color: #19283f;
+    --icon-color:#33d1cc;
+    --main-icon:#eff7fa;
+    --y-color:#ffc400;
+    --red-color:#ff3150;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+/* Start Nav  */
+.navbar{
+background-color: var(--main-color);
+}
+.navbar-toggler i{
+    color: white;
+    
+}
+.navbar .navbar-nav .nav-link{
+margin-right: 10px ;
+color: white ;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus
+{
+    color: var(--icon-color) !important ;
+}
+.search{
+    padding-left: 10px;
+    padding-right: 15px;
+   
+}
+.navbar .search {
+    border-left: var(--icon-color) solid 1px;
+}
+.navbar .search i {
+    color: var(--icon-color);
+} 
+
+/* End Nav  */
+.lading{
+    background-color: var(--main-color);
+    height: 700px;
+}
+/* Start features */
+.features::after{
+    content: '';
+    width: 120px;
+    height: 2px;
+ background-color: var(--icon-color);
+    position: absolute;
+    bottom:-20;
+    left: 50%;
+    transform: translateX(-50%);
+}
+ .main-icon{
+    height: 200px;
+}
+.main-icon i{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.main-icon .number{
+    font-size: 12rem;
+    color:var(--main-icon) ;
+}
+.main-icon .icon{
+    color: var(--icon-color);
+}
+/* End features */
+/* Start side-bar  */
+.side-bar{
+    background-color: var(--main-icon);
+}
+.side::after{
+    content: '';
+    width: 120px;
+    height: 2px;
+ background-color: var(--icon-color);
+    position: absolute;
+    bottom:-20;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.side-bar ul .active {
+    background-color: var(--red-color);
+    color: var(--y-color);
+    
+}
+.side-bar ul li{
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.side-bar ul li:not(.active):hover{
+    background-color: var(--red-color); 
+    border-radius: 50rem;
+}
+.side-bar ul li:hover,
+.side-bar ul li:focus,
+.side-bar ul li:active{
+    color: var(--y-color);
+}
+.side-bar .box{
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+} 
+.said-bar .box::before{
+    content:attr(data-work);
+    position: absolute;
+    background-color:#33d1cc7d ;
+    color:white;
+    font-size: 20px;
+    width:calc(100% - 10px);
+    height:calc(100% - 10px);
+    font-weight:bold ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    transform: translateX(calc(100% -5px));
+    
+}
+.side-bar .box:hover::before{
+transform: translateX(0);
+
+}
+/* End side-bar  */
+/* team-section */
+.team-section{
+    background-color: var(--main-icon);
+}
+.team-section .team-text h2{
+    color: var(--y-color);
+    font-weight: bolder;
+}
+.team-section .team-info h4{
+    color: white;
+    background-color: var(--icon-color);
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    
+}
+
+/* team-section */
+/* Blog  */
+.blog{
+    background-color: var(--main-color);
+}
+/* Blog  */
+/* Start Footer  */
+.footer{
+    background-color: var(--main-color);
+
+}
+.footer .save{
+    padding: 10px 50px;
+}
+.footer .icon-meadie i{
+    margin-left: 10px;
+    color: white;
+}
+/* End Footer  */
+
